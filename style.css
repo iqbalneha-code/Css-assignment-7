@@ -1,0 +1,37 @@
+:root{
+  --theme-color: #E9B812;
+  --combo-color: white;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header{
+  width : 100vw;
+  background-color: #000000;
+}
+.box{
+  width: 100vw;
+  height: 40px;
+  background: var(--theme-color);
+  display: flex;
+  justify-content: space-around;
+}
+.box a{
+    color: var(--combo-color);
+    text-decoration: none ;
+    
+    
+    
+    
+    
+    
+}
+.box i{
+  color: var(--combo-color);
+}
