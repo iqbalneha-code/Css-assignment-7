@@ -1,6 +1,7 @@
-:root{
-  --theme-color: #E9B812;
+:root {
+  --theme-color: #ffad15;
   --combo-color: white;
+  --black-color: black;
 }
 
 
@@ -11,27 +12,207 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-header{
-  width : 100vw;
-  background-color: #000000;
-}
-.box{
-  width: 100vw;
-  height: 40px;
+
+ 
+
+.box {
+  /* width: 100vw; */
+  min-height: 40px;
   background: var(--theme-color);
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: auto;
 }
-.box a{
-    color: var(--combo-color);
-    text-decoration: none ;
-    
-    
-    
-    
-    
-    
-}
-.box i{
+
+.box a {
   color: var(--combo-color);
+  text-decoration: none;
+
+
+
+
+
+
+}
+
+.box i {
+  color: var(--combo-color);
+}
+
+.header {
+  min-height: 70px;
+  background: var(--combo-color);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+nav{
+  display: flex;
+}
+.icon{
+  font-size: 1.5em;
+   display: none;
+}
+
+nav a {
+  color: var(--black-color);
+  padding: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+
+}
+
+button {
+  background-color: var(--theme-color);
+  color: var(--combo-color);
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+
+}
+
+.sec1 {
+  height: auto;
+  margin: auto;
+  /* position: relative; */
+
+}
+
+/* swiper code */
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  /* position: absolute; */
+
+
+
+
+  /* animation-name: slideIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; */
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* position: relative; */
+
+}
+
+.content {
+  text-align: center;
+  text-transform: capitalize;
+
+
+}
+.btn{
+   animation: slideUpAndStick 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;}
+
+
+.content p {
+  font-weight: bold;
+  font-size: 20px;
+ animation: slideUpAndStick 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+padding: 1.2em;}
+
+.content h2 {
+  font-weight: bolder;
+  font-size: 30px;
+  animation: moveUpDown 2s ease-in-out;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////animation//////////////// */
+
+@keyframes moveUpDown {
+
+  0% {
+    transform: translateY(-20px);
+    /* Moves text up */
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(0px);
+    /* Returns to original position */
+  }
+}
+
+@keyframes slideUpAndStick {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); /* Starts 100px below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);     /* Sticks at its original position */
+  }
+}
+
+
+/* media query */
+@media (max-width:1000px) {
+ .header {
+  flex-direction: column;
+  align-items: flex-start;
+
+  
+}
+.icon{
+  display: inline-block;
+}
+.header:hover nav{
+  display: flex;
+
+}
+nav{
+  flex-direction: column;
+  display: none;
+}
+}
+@media (max-width:300px){
+  button {
+  
+margin-top: 50px ;
+}
+.header .logo img{
+  width: 150px;
+}
+.box {
+  /* width: 100vw; */
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
 }
