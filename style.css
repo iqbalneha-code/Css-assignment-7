@@ -143,8 +143,32 @@ padding: 1.2em;}
   animation: moveUpDown 2s ease-in-out;
 
 }
+.cards{
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: space-evenly;
 
 
+}
+.card{
+  width: 400px;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  box-shadow: 2px 0px 2px var(--black-color);
+}
+.card p{
+  margin-top: 20px;
+}
+.card a{
+  color: var(--black-color);
+  text-transform: capitalize;
+    margin-top: 20px;
+
+}
 
 
 
@@ -199,6 +223,11 @@ padding: 1.2em;}
 nav{
   flex-direction: column;
   display: none;
+}
+
+.card{
+margin-top: 50px ;
+
 }
 }
 @media (max-width:300px){
