@@ -13,7 +13,7 @@
   scroll-behavior: smooth;
 }
 
- 
+
 
 .box {
   /* width: 100vw; */
@@ -49,12 +49,14 @@
   align-items: center;
   padding: 20px;
 }
-nav{
+
+nav {
   display: flex;
 }
-.icon{
+
+.icon {
   font-size: 1.5em;
-   display: none;
+  display: none;
 }
 
 nav a {
@@ -88,7 +90,7 @@ button {
 .swiper {
   width: 100%;
   height: 500px;
-  
+
 }
 
 .swiper-slide {
@@ -117,23 +119,26 @@ button {
   text-transform: capitalize;
   color: white;
   /* margin: auto; */
-  
+
 
 }
-.c1{
+
+.c1 {
   position: absolute;
 
-  top: 100px ;
-  left: 10%;
+  top: 100px;
+  left: 15%;
 }
-.c2{
+
+.c2 {
   position: absolute;
   left: 100%;
   top: 100px;
   right: -50px;
   width: 100%;
 }
-.c3{
+
+.c3 {
   position: absolute;
   left: 200%;
   top: 100px;
@@ -146,24 +151,31 @@ button {
   font-size: 20px;
 
 }
-.c3 p,.c2 p{
- padding: 20px;
+
+.c3 p,
+.c2 p {
+  padding: 20px;
   animation: slideUpAndStick 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
 
 }
-.c3 h2,.c2 h2{
-   animation: moveUpDown 2s infinite;
+
+.c3 h2,
+.c2 h2 {
+  animation: moveUpDown 2s infinite;
 
 }
-.btn{
-   animation: slideUpAndStick 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;}
+
+.btn {
+  animation: slideUpAndStick 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
 
 
 .content p {
   font-weight: bold;
   font-size: 20px;
- animation: slideUpAndStick 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
-padding: 1.2em;}
+  animation: slideUpAndStick 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  padding: 1.2em;
+}
 
 .content h2 {
   font-weight: bolder;
@@ -171,15 +183,17 @@ padding: 1.2em;}
   animation: moveUpDown 2s infinite;
 
 }
-.cards{
+
+.cards {
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 
 
 }
-.card{
+
+.card {
   width: 400px;
   border: none;
   display: flex;
@@ -187,23 +201,137 @@ padding: 1.2em;}
   text-align: center;
   padding: 40px;
   box-shadow: 2px 0px 2px var(--black-color);
+  margin-bottom: 20px;
 }
-.card p{
+
+.card p {
   margin-top: 20px;
 }
-.card a{
+
+.card a {
   color: var(--black-color);
   text-transform: capitalize;
-    margin-top: 20px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
 
 }
 
+.card a:hover {
+  color: var(--theme-color);
+}
 
+.causes {
+  text-align: center;
+  text-transform: capitalize;
 
+}
 
+.causes h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 20px 0;
+}
 
+.causes p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
 
+}
 
+.line {
+  width: 100px;
+  height: 8px;
+  background-color: var(--theme-color);
+  margin: auto;
+}
+.line3{
+    width: 200px;
+
+}
+.line4{
+      width: 250px;
+
+}
+.parent {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+
+}
+
+.line2 {
+  margin-left: 0;
+  position: absolute;
+
+  left: 0;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--theme-color);
+  margin-left: 0;
+  
+  box-shadow: 0px 8px 7px rgb(139, 97, 97);
+
+}
+.circle1{
+position: absolute;
+  top: 250px;
+  left: 90px;
+}
+.circle2{
+  position: absolute;
+  top: 250px;
+  left: 180px;
+}
+.circle3{
+  position: absolute;
+  top: 250px;
+  left: 220px;
+}
+.picsart {
+  height: 700px;
+  position: relative;
+  padding: 0;
+  
+}
+
+.picsart img {
+  width: 100%;
+  border-radius: 5px;
+
+}
+
+.donor {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+}
+
+.picsart .para {
+  text-align: center;
+  color: var(--combo-color);
+  margin-top: 12px;
+}
+
+.card-cont {
+  padding: 40px;
+}
+
+.goals {
+  text-align: start;
+  font-size: 20px;
+}
+
+.goals i {
+  font-size: 25px;
+  color: var(--theme-color);
+  margin-right: 8px;
+}
 
 /* ////////////////////////////animation//////////////// */
 
@@ -224,72 +352,89 @@ padding: 1.2em;}
 @keyframes slideUpAndStick {
   0% {
     opacity: 0;
-    transform: translateY(100px); /* Starts 100px below */
+    transform: translateY(100px);
+    /* Starts 100px below */
   }
+
   100% {
     opacity: 1;
-    transform: translateY(0);     /* Sticks at its original position */
+    transform: translateY(0);
+    /* Sticks at its original position */
   }
 }
 
 
 /* media query */
 @media (max-width:1000px) {
- .header {
-  flex-direction: column;
-  align-items: flex-start;
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
 
-  
-}
-.icon{
-  display: inline-block;
-}
-.header:hover nav{
-  display: flex;
 
-}
-nav{
-  flex-direction: column;
-  display: none;
-}
+  }
 
-.card{
-margin-top: 50px ;
+  .icon {
+    display: inline-block;
+  }
 
-}
+  .header:hover nav {
+    display: flex;
+
+  }
+
+  nav {
+    flex-direction: column;
+    display: none;
+  }
+
+  .card {
+    margin-top: 50px;
+
+  }
 }
 
 @media (max-width:570px) {
   .swiper {
-  height: 700px;
-  
-}
-.c1 {
-  
+    height: 700px;
 
-  left: 0%;
-}
-.card{
-  width: 270px;
+  }
+
+  .c1 {
+
+
+    left: 0%;
+  }
+
+  .card {
+    width: 270px;
+
+  }
+.circle1 , .circle2 ,.circle3{
   
-}
-.box{
-  display: none;
-}
   
+  top: 160px;
+
 }
-@media (max-width:300px){
+
+  .box {
+    display: none;
+  }
+
+}
+
+@media (max-width:300px) {
   button {
-  
-margin-top: 50px ;
-}
-.header .logo img{
-  width: 150px;
-}
 
-.swiper {
-  width: 100%;
-  height: 900px;
-  
-}
+    margin-top: 50px;
+  }
+
+  .header .logo img {
+    width: 150px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 900px;
+
+  }
 }
