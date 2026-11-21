@@ -395,7 +395,7 @@ button {
   background-image: url(https://html.dynamiclayers.net/dl/charitify/img/featured-bg.jpg);
 }
 
-.feature{
+.feature {
   max-width: 1600px;
   min-height: 700px;
   display: flex;
@@ -417,13 +417,169 @@ button {
 }
 
 
-.video-img img{
+.video-img img {
   width: 330px;
   height: 220px;
   border-radius: 10px;
   margin-top: 20px;
 }
 
+.volunteer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.volunteer p {
+  margin-top: 10px;
+}
+
+.volunteer h3 {
+  margin-top: 30px;
+}
+
+.volunteer ul li::marker {
+  list-style-type: circle;
+  font-size: 25px;
+  color: var(--theme-color);
+}
+
+.lists {
+  padding: 70px;
+}
+
+.images {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.images img {
+  width: 245px;
+  height: 245px;
+  /* margin: auto; */
+  margin-top: 30px;
+  transition: all 0.2s ease;
+}
+
+.images img:hover {
+  animation: zoomIn 1.5s ease-in-out forwards;
+  box-shadow: 2px 2px 2px black;
+}
+
+.mid-sec {
+  background-image: url(https://html.dynamiclayers.net/dl/charitify/img/counters-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  background-position: center center;
+
+}
+.number{
+  display: flex;
+  color: var(--combo-color);
+  padding: 70PX;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.num{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.num i {
+  font-size: 40px;
+  color: var(--combo-color);
+  margin-bottom: 30px;
+}
+.num h3{
+  color: var(--theme-color);
+}
+/*/////////////////////////////////// footer///////////////////////////////// */
+footer{
+  background-color: var(--black-color);
+  padding: 70px 10px;
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+.charitify{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  /* width: 40%; */
+}
+.footer h2{
+  margin-top: 20px;
+}
+.charitify img{
+  width: 200px;
+}
+.charitify p{
+  color: var(--combo-color) ;
+}
+
+.icons{
+  display: flex;
+  gap: 20px;
+}
+.icons i{
+  color: var(--theme-color);
+  transition: all 0.2s ease-in-out;
+}
+.icons i:hover{
+  color: var(--combo-color);
+}
+.recent, .location{
+  display: flex;
+  color: var(--combo-color);
+  flex-direction: column;
+  gap: 30px;
+}
+.recent a{
+  color: var(--combo-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  padding: 20px 0;
+}
+
+.recent a:hover{
+  color: var(--theme-color);
+  text-decoration: underline;
+}
+.links li{
+list-style-type: none;
+}
+.location{
+  color: var(--combo-color);
+}
+
+.cont{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.cont i{
+  color: var(--theme-color);
+}
 
 /* ////////////////////////////animation//////////////// */
 
@@ -455,6 +611,15 @@ button {
   }
 }
 
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
 
 /* media query */
 @media (max-width:1000px) {
@@ -485,16 +650,24 @@ button {
   }
 
   .feature {
-   padding: 50px;
-   flex-direction: column;
+    padding: 50px;
+    flex-direction: column;
   }
-  .video-img img{
-  width: 230px;
-  height: auto;
-  border-radius: 10px;
+
+  .video-img img {
+    width: 230px;
+    height: auto;
+    border-radius: 10px;
 
 
-}
+  }
+
+  /* .volunteer {
+    flex-direction: column;
+  } */
+
+  
+
 }
 
 @media (max-width:570px) {
@@ -533,15 +706,17 @@ button {
   .box {
     display: none;
   }
- .video-img img{
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
+
+  .video-img img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
 
 
-}
-.feature {
-   padding: 20px;
+  }
+
+  .feature {
+    padding: 20px;
   }
 }
 
@@ -560,7 +735,12 @@ button {
     height: 900px;
 
   }
+
   .feature {
-   padding: 0px;
+    padding: 0px;
+  }
+
+  .images img {
+    width: 100%;
   }
 }
