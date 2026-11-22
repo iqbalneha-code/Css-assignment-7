@@ -446,6 +446,7 @@ button {
 
 .lists {
   padding: 70px;
+  color: var(--black-color);
 }
 
 .images {
