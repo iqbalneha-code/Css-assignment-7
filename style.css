@@ -228,7 +228,7 @@ button {
 .causes {
   text-align: center;
   text-transform: capitalize;
-
+color: var(--black-color);
 }
 
 .causes h2 {
